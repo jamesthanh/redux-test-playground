@@ -1,0 +1,42 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "nkabbara",
+      "name": "Nash Kabbara",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/31865?v=4",
+      "profile": "http://nashkabbara.com",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "brunormferreira",
+      "name": "Bruno Ramires",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/35575092?v=4",
+      "profile": "https://brunormferreira.github.io/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "pbzona",
+      "name": "Phil Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16768769?v=4",
+      "profile": "https://github.com/pbzona",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "js-testing-fundamentals",
+  "projectOwner": "kentcdodds",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
