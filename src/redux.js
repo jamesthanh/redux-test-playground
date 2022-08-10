@@ -42,12 +42,27 @@ const visibilityFilter = (state = "SHOW_ALL", action) => {
   }
 };
 
-const todoApp = (state = {}, action) => {
-  return {
-    todos: todos(state.todos, action),
-    visibilityFilter: visibilityFilter(state.visibilityFilter, action),
+// const todoApp = (state = {}, action) => {
+//   return {
+//     todos: todos(state.todos, action),
+//     visibilityFilter: visibilityFilter(state.visibilityFilter, action),
+//   };
+// };
+
+const combineReducers = (reducers) => {
+  return (state = {}, action) => {
+    return Object.keys(reducers).reduce((nextState, key) => {
+      nextState[key] = reducers[key](state[key], action);
+      return nextState;
+    }, {});
   };
 };
+
+// const { combineReducers } = Redux;
+const todoApp = combineReducers({
+  todos: todos,
+  visibilityFilter: visibilityFilter,
+});
 
 // test("Checking if two states are the same", async () => {
 //   const stateBefore = [];
